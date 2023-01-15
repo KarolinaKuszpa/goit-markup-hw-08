@@ -1,0 +1,26 @@
+.menu-container {
+    width: 100vw;
+    height: 100vw;
+    background-color: $white;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden .menu-container {
+    transform: scale(0);
+}
+.js-close-menu {
+    top: 10px;
+    left: 452px;
+    width: 19px;
+    height: 19px;
+    color: $primary-color;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: $white;
+    cursor: pointer;
+}

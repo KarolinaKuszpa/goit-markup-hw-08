@@ -1,32 +1,25 @@
 .our-clients {
-    padding: 94px 0;
+    padding: 60px 0;
     &__wrapper {
-        display: flex;
-        width: 1200px;
         margin: 0 auto;
         padding: 0 15px;
         flex-direction: column;
-    }
-    &__section {
-        padding: 94px 0;
+        display: flex;
     }
 
-    &__container {
-        width: 100%;
-        max-width: 1200px;
-        padding: 0 15px;
-        margin: 0 auto;
-    }
     &__text {
         text-align: center;
         font-weight: 700;
-        font-size: 36px;
+        font-size: 28px;
         line-height: 1.171;
         letter-spacing: 0.03em;
     }
     &__list {
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
     &__image {

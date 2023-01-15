@@ -1,9 +1,9 @@
 .our-team {
     background-color: $light-gray;
-    padding: 94px 0;
+
     &__wrapper {
         display: flex;
-        width: 1200px;
+
         margin: 0 auto;
         padding: 0 15px;
         flex-direction: column;
@@ -11,28 +11,19 @@
         align-items: center;
         gap: 30px;
     }
-    &__section {
-        padding: 94px 0;
-    }
 
-    &__container {
-        width: 100%;
-        max-width: 1200px;
-        padding: 0 15px;
-        margin: 0 auto;
-    }
     &__text {
         text-align: center;
         font-weight: 700;
-        font-size: 42px;
-        line-height: 1.171;
+        font-size: 28px;
+        line-height: 1.178;
         letter-spacing: 0.03em;
     }
     &__list {
         display: flex;
+        flex-direction: column;
         gap: 30px;
         list-style: none;
-        margin-top: 50px;
     }
     &__images {
         background-color: white;

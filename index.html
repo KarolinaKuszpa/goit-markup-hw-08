@@ -23,6 +23,27 @@
     <body>
         <header class="header">
             <div class="header__wrapper">
+                <!--BUTTON DO OTWIERANIA OKNA MOBILNEGO-->
+                <button
+                    class="menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <svg
+                        width="24"
+                        height="16"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"
+                        ></path>
+                    </svg>
+                </button>
+                <!--KONIEC-->
                 <nav class="header__nav">
                     <a href="index.html" class="logo"
                         >Web<span class="logo__studio">Studio</span></a
@@ -638,6 +659,7 @@
                 </div>
             </section>
         </main>
+
         <footer class="footer-wrapper">
             <div class="footer-wrapper__wrapper">
                 <div>
@@ -857,6 +879,22 @@
                 </form>
             </div>
         </div>
+        <div class="menu js-menu-container">
+            <button class="menu__toggle js-close-menu">&times</button>
+            <div class="menu-container is-hidden">
+                <ul class="menu__nav">
+                    <li><a href="#" class="menu__link">Agencja</a></li>
+                    <li>
+                        <a href="portfolio.html" class="menu__link"
+                            >Portfolio</a
+                        >
+                    </li>
+                    <li><a href="#" class="menu__link">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script defer src="js/mobile-menu.js"></script>
         <script src="./js/modal.js"></script>
     </body>
 </html>

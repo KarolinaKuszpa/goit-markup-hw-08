@@ -3,10 +3,20 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
         ),
-        url(../images/background.jpg);
+        url(../images/header@2x.png);
     background-position: center;
     background-repeat: no-repeat;
     background-color: $dark;
+    height: auto;
+    top: 60px;
+    left: 0px;
+    @include tablet {
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/header@2x.png);
+    }
 
     &__wrapper {
         display: flex;
@@ -17,12 +27,13 @@
     }
     &__text {
         font-weight: 900;
-        font-size: 44px;
-        line-height: 1.3636;
+        font-size: 26px;
+        line-height: 1.615;
         letter-spacing: 0.06em;
         color: $white;
         text-align: center;
-        margin: 106px 252px 0;
+        left: 57px;
+        top: 178px;
     }
     &__btn {
         width: 200px;

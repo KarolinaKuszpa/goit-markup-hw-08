@@ -6,6 +6,8 @@
     letter-spacing: 0.03em;
     color: $primary-color;
     text-decoration: none;
+    display: block;
+    text-align: center;
 
     &__studio {
         color: $black;
