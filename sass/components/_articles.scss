@@ -1,8 +1,6 @@
 .articles {
     padding: 60px 0;
     &__wrapper {
-        display: flex;
-
         margin: 0 auto;
         padding: 0 15px;
         flex-direction: column;
@@ -15,12 +13,13 @@
     &__item {
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
         list-style: none;
     }
     &__icons {
-        width: 270px;
+        width: 450px;
         height: 120px;
+        max-width: 100%;
         background-color: $light-gray;
         border-radius: 4px;
         display: flex;

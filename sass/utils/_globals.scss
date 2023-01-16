@@ -25,7 +25,11 @@ figure {
     padding: 0;
 }
 
-img,
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 svg {
     vertical-align: middle;
 }
@@ -41,7 +45,13 @@ body {
     padding: 60px 0;
 }
 .container {
-    max-width: 100%;
+    max-width: 480px;
     padding: 0 15px;
     margin: 0 auto;
+    @include tablet {
+        max-width: 768px;
+    }
+    @include desktop {
+        max-width: 1200px;
+    }
 }
