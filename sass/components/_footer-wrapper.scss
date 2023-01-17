@@ -8,7 +8,7 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 70px;
+        gap: 60px;
     }
 
     &__address-wrapper {
@@ -96,11 +96,10 @@
         line-height: 1.142;
         letter-spacing: 0.03em;
         align-items: center;
-        margin-top: 12px;
         margin-bottom: 20px;
     }
     &__sign-in-box {
-        display: block;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;

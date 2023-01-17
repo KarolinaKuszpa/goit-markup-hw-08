@@ -1,18 +1,19 @@
 .articles {
     padding: 60px 0;
+
     &__wrapper {
         margin: 0 auto;
         padding: 0 15px;
+        display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+
         gap: 30px;
-        margin-left: 15px;
-        margin-right: 15px;
     }
     &__item {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 10px;
         list-style: none;
     }
