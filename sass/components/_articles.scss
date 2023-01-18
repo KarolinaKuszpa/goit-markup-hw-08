@@ -7,16 +7,30 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-
         gap: 30px;
     }
+
     &__item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 10px;
         list-style: none;
+        @include tablet {
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 30px;
+        }
     }
+    &__articles-box {
+        @include tablet {
+            width: 354px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
     &__icons {
         width: 450px;
         height: 120px;
@@ -24,6 +38,7 @@
         background-color: $light-gray;
         border-radius: 4px;
         display: flex;
+
         justify-content: center;
         align-items: center;
         margin-bottom: 30px;
@@ -36,6 +51,9 @@
         color: $anthracite;
         margin-top: 0;
         text-align: center;
+        @include tablet {
+            text-align: left;
+        }
     }
     &__icons-item {
         display: flex;
@@ -46,10 +64,8 @@
         letter-spacing: 0.03em;
         color: $ash;
         margin-top: 10px;
-
         gap: 15px;
     }
-
     &__icons-stroke:hover,
     &__icons-stroke:focus {
         stroke: $primary-color;
