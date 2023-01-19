@@ -39,6 +39,16 @@
         border-radius: 50%;
         background-color: var(--white);
         cursor: pointer;
+        @include tablet {
+            :hover {
+                color: $primary-color;
+            }
+            @include desktop {
+                :hover {
+                    color: $primary-color;
+                }
+            }
+        }
     }
     &__title-modal {
         color: #212121;

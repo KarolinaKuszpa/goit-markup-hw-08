@@ -17,6 +17,14 @@
             url(../images/background-img/tablet@2x.jpg);
         background-size: cover;
     }
+    @include desktop {
+        background-image: linear-gradient(
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ),
+            url(../images/background-img/desktop@2x.jpg);
+        background-size: cover;
+    }
 
     &__wrapper {
         display: flex;
