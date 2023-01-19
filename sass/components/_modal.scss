@@ -40,16 +40,17 @@
         background-color: var(--white);
         cursor: pointer;
         @include tablet {
-            :hover {
+            span:hover {
                 color: $primary-color;
             }
             @include desktop {
-                :hover {
+                span:hover {
                     color: $primary-color;
                 }
             }
         }
     }
+
     &__title-modal {
         color: #212121;
         font-weight: 700;
