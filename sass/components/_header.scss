@@ -114,7 +114,7 @@
         color: $primary-color;
         display: none;
         @include tablet {
-            color: $primary-color;
+            color: $black;
             display: block;
         }
     }
