@@ -4,6 +4,7 @@
 
     &__wrapper {
         display: flex;
+        flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
 
@@ -11,6 +12,7 @@
         padding: 0 15px;
         @include tablet {
             display: flex;
+            flex-direction: row;
             justify-content: space-between;
             align-items: center;
 
@@ -19,13 +21,17 @@
         }
         @include desktop {
             max-width: 1200px;
+            justify-content: space-between;
+            flex-direction: row;
         }
     }
 
     &__nav {
         display: flex;
         align-items: center;
+
         gap: 93px;
+
         @include tablet {
             display: flex;
             align-items: center;
@@ -116,12 +122,6 @@
     &__nav-item::after {
         content: '';
         background-color: transparent;
-        display: none;
-        @include tablet {
-            content: '';
-            background-color: transparent;
-            display: block;
-        }
     }
 
     &__nav-item:is(:hover, :focus)::after {
