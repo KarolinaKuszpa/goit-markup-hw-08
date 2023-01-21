@@ -84,10 +84,6 @@
         letter-spacing: 0.02em;
         text-decoration: none;
     }
-    &__mail-contact:hover {
-        text-decoration: underline;
-        color: $primary-color;
-    }
 
     &__tel-contact {
         color: rgba(33, 150, 243, 1);
@@ -96,10 +92,6 @@
         line-height: 1.171;
         letter-spacing: 0.02em;
         text-decoration: none;
-    }
-    &__tel-contact:hover {
-        text-decoration: underline;
-        color: $primary-color;
     }
 
     &__social-list {
